@@ -1,10 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "T.A.R.S. OS",
-  description: "Technology Autonomous Repository Supervisor",
-};
+import AppProvider from "@/providers/AppProvider";
 
 export default function RootLayout({
   children,
@@ -13,7 +8,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <AppProvider>
+          {children}
+        </AppProvider>
+      </body>
     </html>
   );
 }

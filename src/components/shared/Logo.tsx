@@ -5,7 +5,7 @@ export default function Logo() {
         T.A.R.S.
       </h1>
 
-      <p className="mt-6 text-gray-400 tracking-[0.35em] uppercase text-sm">
+      <p className="mt-6 text-gray-400 tracking-[0.45em] uppercase text-sm">
         Technology Autonomous Repository Supervisor
       </p>
     </div>
