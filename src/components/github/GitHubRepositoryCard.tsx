@@ -41,7 +41,9 @@ export default function GitHubRepositoryCard({
         transition-all
         hover:border-cyan-400/70
         hover:bg-cyan-500/10
-        hover:shadow-[0_0_25px_rgba(6,182,212,0.25)]
+        hover:shadow-[0_0_35px_rgba(6,182,212,0.35)]
+        hover:ring-1
+        hover:ring-cyan-400/30
       "
     >
       {/* Repository Name */}

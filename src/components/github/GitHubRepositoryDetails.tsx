@@ -59,7 +59,8 @@ export default function GitHubRepositoryDetails() {
           x: -20,
         }}
         transition={{
-          duration: 0.25,
+          duration: 0.35,
+          ease: "easeOut",
         }}
         className="
           sticky
