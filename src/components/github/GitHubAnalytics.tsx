@@ -3,7 +3,7 @@
 import GitHubStats from "./GitHubStats";
 import GitHubLanguageChart from "./GitHubLanguageChart";
 import GitHubActivityChart from "./GitHubActivityChart";
-import GitHubInsights from "./GitHubInsights";
+import GitHubContributionHeatmap from "./GitHubContributionHeatmap";
 
 interface Props {
   repositories: any[];
@@ -12,14 +12,14 @@ interface Props {
 export default function GitHubAnalytics({
   repositories,
 }: Props) {
-  if (!repositories.length) {
-    return null;
-  }
+  if (!repositories.length) return null;
 
   return (
     <section className="space-y-8">
       {/* Statistics */}
-      <GitHubStats repositories={repositories} />
+      <GitHubStats
+        repositories={repositories}
+      />
 
       {/* Charts */}
       <div className="grid gap-8 xl:grid-cols-2">
@@ -32,8 +32,8 @@ export default function GitHubAnalytics({
         />
       </div>
 
-      {/* Repository Insights */}
-      <GitHubInsights
+      {/* Contribution Heatmap */}
+      <GitHubContributionHeatmap
         repositories={repositories}
       />
     </section>
